@@ -27,7 +27,7 @@ public class HomePage {
 
 
     public boolean resultNegativeSamsung() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'телевизор LG')] "))
-                .getText().equals("телевизор Samsung");
+        return driver.findElement(By.xpath("//span[@data-bind='html: tag.text']")).getText().equals("Samsung");
+
     }
 }
